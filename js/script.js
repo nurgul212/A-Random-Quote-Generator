@@ -24,7 +24,7 @@ let quotes = [
   {
     quote:"Where flowers bloom, so does hope.",
     source: "Lady Bird Johnson",
-    citation: "Book | What Color Is Your Parachute?",
+    citation: 'Book-"What Color Is Your Parachute?"',
     year: "unknown",
     quote_type: "| Educational"
   },
