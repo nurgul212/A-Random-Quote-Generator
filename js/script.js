@@ -106,7 +106,6 @@ function printQuote () {
   html += '</p>';   
   quoteBox.innerHTML = html;  
   return document.body.style.backgroundColor=getBackgroundColor();
-//  console.log(html);
 }
 
 // Create random background color for each quote
@@ -114,11 +113,9 @@ function getBackgroundColor() {
   let r = Math.floor(Math.random() * 256);
   let g = Math.floor(Math.random() * 256);
   let b = Math.floor(Math.random() * 256);
-  console.log("hello");
 
   let rgbColor = "rgb(" + r + "," + g + "," + b + ")";
   return (rgbColor);
- 
 }
 
 //quote will change every 8 seconds
