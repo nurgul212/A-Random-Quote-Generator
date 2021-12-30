@@ -92,7 +92,7 @@ function getRandomQuote() {
 
 // printQuote function 
 function printQuote () {
-  let randomQuote = getRandomQuote(quotes);
+  let randomQuote = getRandomQuote();
   let quoteBox = document.getElementById("quote-box");
   let html = `<p class="quote"> ${randomQuote.quote} </p>
               <p class="source">${randomQuote.source}
@@ -105,11 +105,11 @@ function printQuote () {
   } 
   html += '</p>';   
   quoteBox.innerHTML = html;  
-  return document.body.style.backgroundColor=getBackgroundColor();
+  return document.body.style.backgroundColor=getColor();
 }
 
 // Create random background color for each quote
-function getBackgroundColor() {
+function getColor() {
   let r = Math.floor(Math.random() * 256);
   let g = Math.floor(Math.random() * 256);
   let b = Math.floor(Math.random() * 256);
