@@ -124,10 +124,6 @@ function getBackgroundColor() {
 //quote will change every 8 seconds
 let timer = setInterval(printQuote, 8000);
 
-
-/***
- * click event listener for the print quote button
- * DO NOT CHANGE THE CODE BELOW!!
-***/
+// when each time the "show another quote" button is clicked, it calls the printQuote function to run.
 
 document.getElementById('load-quote').addEventListener("click", printQuote, false);
